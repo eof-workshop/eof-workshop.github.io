@@ -13,7 +13,7 @@ Static website for the Eyes of the Future workshop series. The project uses only
 ├── assets/
 │   ├── css/styles.css             # shared design system for every edition
 │   ├── js/main.js                 # menu, active navigation and back-to-top
-│   ├── icons/favicon.svg
+│   ├── icons/favicon.png
 │   └── images/people/             # speaker and organizer portraits/placeholders
 └── README.md
 ```
@@ -35,7 +35,7 @@ Every person has a separate placeholder file in:
 assets/images/people/
 ```
 
-The easiest approach is to replace the corresponding SVG with a real portrait while keeping the same filename. The image should be square; the website will crop it automatically.
+The easiest approach is to replace the corresponding PNG with a real portrait while keeping the same filename. The image should be square; the website will crop it automatically.
 
 You may also use JPG, PNG or WebP files. In that case, update the relevant `src` attribute in the HTML, for example:
 
@@ -90,3 +90,8 @@ Because the project is entirely static, the folder can be published directly wit
 - Archive pages intentionally omit About, Call for Papers, and Important Dates.
 - Every archive keeps Program, Invited Speakers, Awards, Accepted Papers, Organizers, Photos, and edition navigation.
 - Archive gallery placeholders live in `assets/images/photos/`; replace them using the same filenames to publish event photos without editing HTML.
+
+
+## Image format
+
+All workshop photographs and people portraits use PNG files. Replace a placeholder by keeping the same filename, or update the corresponding `src` attribute in the HTML. The favicon remains an SVG icon.
