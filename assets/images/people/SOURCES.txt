@@ -1,0 +1,54 @@
+EOF Workshop — portrait sources
+Updated: 2026-08-19
+
+The files listed below were converted to square PNG images for the workshop website from publicly accessible online sources. Public accessibility does not automatically grant republication rights. Verify permission, attribution and credit requirements with the source or the person before publishing the final site.
+
+yusuke-sugano.png
+Source image: https://www.yusuke-sugano.info/img/sugano-2023_hu_3e836281ae5e76ab.jpg
+Source page: https://www.yusuke-sugano.info/
+
+oleg-komogortsev.png
+Source image: https://docs.gato.txst.edu/756367/w/2000/8xyme24KVaIe/Oleg_Photo_1-1.jpg
+Source page: https://news.txst.edu/accolades-and-achievements/2025/tsus-names-regents-professors-for-2026.html
+
+elisabetta-farella.png
+Source image: https://magazine.fbk.eu/wp-content/uploads/2017/05/Elisabetta-Farella-300x300.jpg
+Source page: https://magazine.fbk.eu/it/spotlight/elisabetta-farella/
+
+giovanni-maria-farinella.png
+Source image: https://www.dmi.unict.it/farinella/GMF_2022.png
+Source page: https://www.dmi.unict.it/farinella/
+
+marco-paracchini.png
+Source image: https://www.frontiere.polimi.it/fileadmin/_processed_/2/e/csm_foto_eye_tracking1_DEF_59fe235699.jpg
+Source page: https://www.frontiere.polimi.it/dettaglio/persone-idee-occhiali-futuro-storie-ricerca-smart-eyewear-lab
+Note: portrait cropped from the published SEL photograph.
+
+marco-cannici.png
+Source image: https://marcocannici.github.io/authors/admin/avatar_hub7466c241cf77ae960e1ebb7ed6f286e_61682_270x270_fill_q75_lanczos_center.jpg
+Source page: https://marcocannici.github.io/
+
+aurelio-teliti.png
+Source image: https://phd-inf.polimi.it/wp-json/phd-current-students/v1/photo?photo_id=1485940
+Source: Politecnico di Milano PhD student directory
+
+michele-magno.png
+Source image: https://ethz.ch/en/news-and-events/eth-news/news/2026/05/400-students-engage-in-project-based-and-hands-on-learning-with-ai-and-hardware/_jcr_content/wide_content/greybox_copy/par/textimage/image.imageformat.textdouble.371426061.png
+Source page: https://ethz.ch/en/news-and-events/eth-news/news/2026/05/400-students-engage-in-project-based-and-hands-on-learning-with-ai-and-hardware.html
+Credit displayed by source: Michaela Lamplmay / ETH Zurich
+
+chiara-bartolozzi.png
+Source image: https://www.allaboutcircuits.com/uploads/thumbnails/Bartolozzi_Feature.jpg
+Source page: https://www.allaboutcircuits.com/news/qa-with-renowned-neuromorphic-chip-designer-chiara-bartolozzi/
+
+mihai-bace.png
+Source image: https://www.kuleuven.be/wieiswie/en/person/00162869/photo
+Source page: https://www.kuleuven.be/wieiswie/en/person/00162869
+
+roberto-vezzani.png
+Source image: https://aimagelab-legacy.ing.unimore.it/imagelab/uploadedImages/000233_thumb.jpg
+Source page: https://aimagelab-legacy.ing.unimore.it/imagelab/person.asp?idpersona=8
+
+antonino-furnari.png
+Source image: https://www.aidlda.it/wp-content/uploads/2022/04/furnari-600x600.jpeg
+Source page: https://www.aidlda.it/speaker/dr-antonino-furnari/

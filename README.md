@@ -1,6 +1,6 @@
 # Eyes of the Future workshop website
 
-Static website for the Eyes of the Future workshop series. The project uses only HTML, CSS and a small amount of vanilla JavaScript: no CMS, framework, package manager, database or build step is required.
+Static website for the Eyes of the Future workshop series. The project uses HTML, CSS and a small amount of vanilla JavaScript; it has no CMS, framework, package manager, database or build step.
 
 ## Structure
 
@@ -8,66 +8,73 @@ Static website for the Eyes of the Future workshop series. The project uses only
 .
 ├── index.html                     # current edition: EOF @ WACV 2027
 ├── editions/
-│   ├── eccv-2024.html             # archive template: ICVSE @ ECCV 2024
-│   └── ijcnn-2025.html            # archive template: IAISE @ IJCNN 2025
+│   ├── eccv-2024.html             # archive: ICVSE @ ECCV 2024
+│   └── ijcnn-2025.html            # archive: IAISE @ IJCNN 2025
 ├── assets/
-│   ├── css/styles.css             # shared design system for every edition
+│   ├── css/styles.css             # shared design system
 │   ├── js/main.js                 # menu, active navigation and back-to-top
-│   ├── icons/favicon.png
-│   └── images/people/             # speaker and organizer portraits/placeholders
+│   ├── icons/favicon.svg
+│   └── images/
+│       ├── people/                # PNG portraits and placeholders
+│       └── photos/                # optional workshop galleries
 └── README.md
 ```
 
-## Template system
+## Page templates
 
-The site has two coherent page variants:
+The project has two coherent page variants:
 
-1. **Current edition** — `index.html`, with the current call for papers, dates, tentative program, speakers, awards, organizers and edition archive.
-2. **Archived edition** — both pages in `editions/` use the same archive structure, navigation, hero, people cards, awards component and edition switcher.
+1. **Current edition** — `index.html`, with About, Call for Papers, Important Dates, Program, Invited Speakers, Awards, Organizers, Contact and Editions.
+2. **Archived edition** — the pages in `editions/`, with Program, Invited Speakers, Awards, Accepted Papers, Organizers, Photos and edition navigation.
 
-All visual components are shared through `assets/css/styles.css`. Speaker and organizer cards deliberately use the same HTML structure and CSS class: `.person-card`.
+All visual components are shared through `assets/css/styles.css`. Speaker and organizer entries use the same `.person-card` component.
 
-## Replacing portraits
+## Portraits
 
-Every person has a separate placeholder file in:
+All people images are PNG files in:
 
 ```text
 assets/images/people/
 ```
 
-The easiest approach is to replace the corresponding PNG with a real portrait while keeping the same filename. The image should be square; the website will crop it automatically.
+Several public portraits have already been cropped to square PNG files. Their online sources are documented in `assets/images/people/SOURCES.txt`. Before publication, verify the reuse and credit requirements of each source.
 
-You may also use JPG, PNG or WebP files. In that case, update the relevant `src` attribute in the HTML, for example:
+The following people still use the neutral EOF placeholder artwork:
 
-```html
-<img src="assets/images/people/marco-paracchini.jpg" alt="Marco Paracchini">
-```
+- Michael Goesele
+- Pietro Bartoli
+- Luca Merigo
+- several speakers and organizers from the archived editions
 
-## Information still to complete
+To replace an image, overwrite the corresponding PNG while keeping the same filename. A square image of at least 600 × 600 px is recommended.
 
-The current WACV page intentionally leaves editable placeholders for:
+## Archive photographs
 
-- exact workshop day;
-- submission deadline;
-- OpenReview information;
-- final archival/non-archival policy;
-- exact Best Paper Award prize;
-- speaker talk titles;
-- real portraits and optional organizer biographies.
+The ECCV 2024 and IJCNN 2025 pages contain a public-facing “Photo archive coming soon” state. When event photos are available, replace that block with `.photo-gallery` and `.gallery-item` elements; the required styles are already included in `assets/css/styles.css`.
 
-The IJCNN 2025 archive includes a ready-made placeholder for the accepted paper/poster list and a program structure that can be expanded with exact times. Both archive award sections include a place for the winning papers and recipients.
+## Current items still to complete
 
-## Adding a future archive
+Only two public details remain intentionally pending on the WACV 2027 page:
+
+- the exact workshop day within January 4–5, 2027;
+- the workshop-specific OpenReview submission URL.
+
+The OpenReview status block can be replaced with a normal link as soon as the portal is active.
+
+## Accepted-paper archives
+
+Both archive pages preserve the accepted-paper titles and author lists. The ECCV 2024 page also records the workshop date, venue and room. The IJCNN 2025 schedule uses the same visual format as the current edition.
+
+## Adding a future edition
 
 Duplicate either file in `editions/`, then update:
 
-- page title and meta description;
-- edition hero and metadata;
-- quick navigation links;
-- program, speakers, awards, papers and organizers;
-- edition cards and footer links.
+- the page title and meta description;
+- the hero metadata and statistics;
+- the program, speakers, awards, accepted papers and organizers;
+- the edition cards and footer links.
 
-Keep `class="archive-page"` on the `<body>` element so the archived-edition styling remains consistent.
+Keep `class="archive-page"` on the `<body>` element to retain the archive styling.
 
 ## Local preview
 
@@ -77,21 +84,8 @@ From the project directory, run:
 python3 -m http.server 8000
 ```
 
-Then open `http://localhost:8000` in a browser.
+Then open `http://localhost:8000`.
 
 ## Deployment
 
-Because the project is entirely static, the folder can be published directly with GitHub Pages, GitLab Pages, Netlify, Cloudflare Pages or any standard web server. Upload the contents of this directory without changing the relative paths.
-
-
-## Content policy for editions
-
-- `index.html` is the current WACV 2027 edition and follows the accepted proposal for title, CFP, deadlines, program, invited speakers, award, and organizers.
-- Archive pages intentionally omit About, Call for Papers, and Important Dates.
-- Every archive keeps Program, Invited Speakers, Awards, Accepted Papers, Organizers, Photos, and edition navigation.
-- Archive gallery placeholders live in `assets/images/photos/`; replace them using the same filenames to publish event photos without editing HTML.
-
-
-## Image format
-
-All workshop photographs and people portraits use PNG files. Replace a placeholder by keeping the same filename, or update the corresponding `src` attribute in the HTML. The favicon remains an SVG icon.
+The contents of this directory can be published directly with GitHub Pages or any standard static web host. Keep all relative paths unchanged.
