@@ -826,6 +826,10 @@ footer {
   background: var(--surface);
   box-shadow: 0 10px 24px rgba(23, 32, 28, .04);
 }
+.gallery-item a {
+  display: block;
+  line-height: 0;
+}
 .gallery-item img {
   display: block;
   width: 100%;
