@@ -13,16 +13,16 @@
 <header class="site-header">
   <div class="nav-wrap">
     <a class="brand" href="#top" aria-label="Eyes of the Future homepage">
-      <span class="brand-mark">EOF</span>
+      <span class="brand-mark"><img src="assets/icons/sel-logo.svg" alt="Smart Eyewear Lab"></span>
       <span class="brand-copy"><strong>Eyes of the Future</strong><small>WACV 2027</small></span>
     </a>
     <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false">Menu</button>
     <nav class="nav-links" id="site-nav" aria-label="Main navigation">
       <a href="#about">About</a>
+      <a href="#dates">Dates</a>
       <a href="#cfp">Submit</a>
       <a href="#program">Program</a>
-      <a href="#speakers">People</a>
-      <a href="#awards">Awards</a>
+      <a href="#organizers">Organizers</a>
       <a href="#contact">Contact</a>
       <a class="nav-editions" href="#editions">Editions</a>
     </nav>
@@ -32,6 +32,7 @@
   <section class="edition-hero edition-hero-current" id="top">
     <div class="container edition-hero-grid">
       <div class="edition-hero-main">
+        <p class="hero-organized"><img src="assets/icons/sel-logo.svg" alt="" class="hero-organized-logo">Organized by the <strong>Smart Eyewear Lab (SEL)</strong>, a joint research initiative between EssilorLuxottica and Politecnico di Milano.</p>
         <p class="eyebrow">3rd edition · IEEE/CVF WACV 2027</p>
         <h1>Eyes of the Future</h1>
         <p class="edition-subtitle">Deployable Vision and AI for Smart Eyewear <span>(EOF)</span></p>
@@ -40,7 +41,9 @@
           <a class="button" href="#cfp">Call for Papers</a>
           <a class="button secondary" href="#program">View Program</a>
         </div>
-        <p class="hero-organized">Organized by the <strong>Smart Eyewear Lab (SEL)</strong>, a joint research initiative between EssilorLuxottica and Politecnico di Milano.</p>
+        <div class="hero-overview prose" id="about">
+          <p>Smart eyewear is an emerging real-world platform for computer vision, offering an always-available first-person view for accessibility, navigation and augmented reality. EOF brings together researchers and practitioners in computer vision, embedded AI, eye tracking and human-computer interaction, with smart glasses as the primary domain and related XR, wearable and mobile platforms explicitly welcome.</p>
+        </div>
       </div>
       <aside class="meta-panel" aria-label="Workshop details">
         <div class="meta-panel-head"><span>Workshop details</span><span class="meta-panel-state">Current edition</span></div>
@@ -52,49 +55,72 @@
       </aside>
     </div>
   </section>
-  <nav class="jump-nav" aria-label="Quick navigation">
-    <div class="container jump-nav-inner">
-      <span class="jump-label">On this page</span>
-      <a href="#about">About</a><a href="#cfp">Call for Papers</a><a href="#dates">Dates</a><a href="#program">Program</a><a href="#speakers">Speakers</a><a href="#awards">Awards</a><a href="#organizers">Organizers</a><a href="#contact">Contact</a><a href="#editions">Past editions</a>
-    </div>
-  </nav>
 
-  <section class="section" id="about">
+  <section class="section section-soft timeline-top" id="dates">
     <div class="container">
       <div class="section-head">
-        <p class="section-kicker">Overview</p>
-        <h2>About EOF</h2>
-        <p class="section-intro">Smart eyewear is an increasingly important real-world platform for computer vision, offering an always-available first-person view for accessibility, navigation, interaction, activity understanding, memory augmentation and augmented reality.</p>
+        <p class="section-kicker">Timeline</p>
+        <h2>Important Dates</h2>
+        <p class="section-intro">Submission and camera-ready deadlines are at 11:59 PM in the timezone indicated below. Dates marked <span class="tbd-badge tbd-badge-inline">TBD</span> are not yet finalized.</p>
       </div>
-      <div class="prose prose-columns">
-        <p>Deployable systems must jointly satisfy accuracy, latency, energy, heat, memory, privacy, robustness and form-factor constraints. Recent progress in egocentric vision, multimodal and foundation models, gaze estimation, efficient neural architectures and low-power sensing makes this a timely moment to connect algorithmic advances with wearable deployment.</p>
-        <p>EOF brings together researchers and practitioners from computer vision, machine learning, embedded AI, AR/XR, eye tracking, wearable sensing and human-computer interaction. Smart glasses are the primary application domain, while relevant work on eye tracking and egocentric perception across related devices is explicitly welcome.</p>
-      </div>
+      <ol class="timeline">
+        <li class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-body">
+            <time datetime="2026-10-14">Oct 14, 2026</time>
+            <span>Paper submission deadline · AoE</span>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-body">
+            <time datetime="2026-10-30">Oct 30, 2026</time>
+            <span>Author notification</span>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-body">
+            <time datetime="2026-11-20">Nov 20, 2026</time>
+            <span>Camera-ready deadline · Pacific Time</span>
+          </div>
+        </li>
+        <li class="timeline-item timeline-tbd timeline-highlight">
+          <div class="timeline-marker"></div>
+          <div class="timeline-body">
+            <time datetime="2027-01-04">Jan 4–5, 2027<span class="tbd-badge">Exact day TBD</span></time>
+            <span>EOF workshop · Orlando, Florida</span>
+          </div>
+        </li>
+      </ol>
     </div>
   </section>
 
-  <section class="section section-soft" id="cfp">
+  <section class="section" id="cfp">
     <div class="container">
       <div class="section-head">
         <p class="section-kicker">Contribute</p>
         <h2>Call for Papers</h2>
-        <p class="section-intro">EOF focuses on computer vision and AI for smart glasses and deployable smart-eyewear systems. We also welcome relevant work developed using XR headsets, head-mounted cameras, wearable sensors, mobile devices and related visual platforms.</p>
+        <p class="section-intro">We invite original, unpublished papers addressing one or more of the following eight topics.</p>
       </div>
-      <div class="topic-grid">
-        <article class="topic-card"><span class="topic-index">01</span><h3>Efficient vision</h3><p>Real-time, low-latency, compact and resource-aware vision models.</p></article>
-        <article class="topic-card"><span class="topic-index">02</span><h3>Egocentric perception</h3><p>Action recognition, activity anticipation, scene understanding and 3D mapping.</p></article>
-        <article class="topic-card"><span class="topic-index">03</span><h3>Eye &amp; gaze</h3><p>Eye tracking, gaze estimation, near-eye sensing and gaze-aware interaction.</p></article>
-        <article class="topic-card"><span class="topic-index">04</span><h3>Multimodal wearables</h3><p>Context awareness, personalization and vision-language methods.</p></article>
-        <article class="topic-card"><span class="topic-index">05</span><h3>Low-power sensing</h3><p>Event-based, neuromorphic and low-power sensing and processing.</p></article>
-        <article class="topic-card"><span class="topic-index">06</span><h3>Responsible deployment</h3><p>Privacy-preserving learning, robustness, safety, fairness and responsible deployment.</p></article>
-        <article class="topic-card"><span class="topic-index">07</span><h3>Datasets &amp; benchmarks</h3><p>Datasets, benchmarks and evaluation protocols for smart eyewear and related platforms.</p></article>
-        <article class="topic-card"><span class="topic-index">08</span><h3>Applications</h3><p>Deployable applications for smart eyewear and related first-person visual devices.</p></article>
-      </div>
-      <div class="info-grid info-grid-spaced">
-        <article class="info-card"><span class="info-label">Paper format</span><h3>5–8 pages</h3><p>Archival regular papers of 5–8 pages, excluding references, following the WACV workshop paper formatting guidelines.</p></article>
-        <article class="info-card"><span class="info-label">Review</span><h3>Double-blind via OpenReview</h3><p>Every submission will undergo double-blind peer review through OpenReview and receive at least three reviews.</p></article>
-        <article class="info-card"><span class="info-label">Presentation</span><h3>Pitch + poster</h3><p>All accepted papers will be presented through a short oral pitch and a poster at the in-person workshop.</p></article>
-        <article class="info-card"><span class="info-label">Proceedings</span><h3>WACV 2027 Workshop Proceedings</h3><p>All accepted regular papers will be published in the WACV 2027 Workshop Proceedings and submitted for inclusion in IEEE Xplore.</p></article>
+      <div class="cfp-columns">
+        <ul class="info-list">
+          <li class="info-row"><span class="topic-index">A</span><div class="topic-content"><span class="info-label">Paper format</span><h3>5–8 pages</h3><p>Archival regular papers of 5–8 pages, excluding references, following the WACV workshop paper formatting guidelines.</p></div></li>
+          <li class="info-row"><span class="topic-index">B</span><div class="topic-content"><span class="info-label">Review</span><h3>Double-blind via OpenReview</h3><p>Every submission will undergo double-blind peer review through OpenReview and receive at least three reviews.</p></div></li>
+          <li class="info-row"><span class="topic-index">C</span><div class="topic-content"><span class="info-label">Presentation</span><h3>Pitch + poster</h3><p>All accepted papers will be presented through a short oral pitch and a poster at the in-person workshop.</p></div></li>
+          <li class="info-row"><span class="topic-index">D</span><div class="topic-content"><span class="info-label">Proceedings</span><h3>WACV 2027 Workshop Proceedings</h3><p>All accepted regular papers will be published in the WACV 2027 Workshop Proceedings and submitted for inclusion in IEEE Xplore.</p></div></li>
+        </ul>
+        <div class="cfp-divider" aria-hidden="true"></div>
+        <div class="topic-grid">
+          <article class="topic-card"><span class="topic-index">01</span><div class="topic-content"><h3>Efficient vision</h3><p>Real-time, low-latency, compact and resource-aware vision models.</p></div></article>
+          <article class="topic-card"><span class="topic-index">02</span><div class="topic-content"><h3>Egocentric perception</h3><p>Action recognition, activity anticipation, scene understanding and 3D mapping.</p></div></article>
+          <article class="topic-card"><span class="topic-index">03</span><div class="topic-content"><h3>Eye &amp; gaze</h3><p>Eye tracking, gaze estimation, near-eye sensing and gaze-aware interaction.</p></div></article>
+          <article class="topic-card"><span class="topic-index">04</span><div class="topic-content"><h3>Multimodal wearables</h3><p>Sensor fusion, context-aware assistants and vision-language models for wearables.</p></div></article>
+          <article class="topic-card"><span class="topic-index">05</span><div class="topic-content"><h3>Low-power sensing</h3><p>Event-based, neuromorphic and low-power sensing and processing.</p></div></article>
+          <article class="topic-card"><span class="topic-index">06</span><div class="topic-content"><h3>Responsible deployment</h3><p>Privacy-preserving learning, on-device robustness, safety and fairness safeguards.</p></div></article>
+          <article class="topic-card"><span class="topic-index">07</span><div class="topic-content"><h3>Datasets &amp; benchmarks</h3><p>New datasets, standardized benchmarks and reproducible evaluation protocols.</p></div></article>
+          <article class="topic-card"><span class="topic-index">08</span><div class="topic-content"><h3>Applications</h3><p>Navigation assistance, accessibility tools, translation, memory recall and AR overlays.</p></div></article>
+        </div>
       </div>
       <aside class="submission-status" aria-label="Submission portal status">
         <div>
@@ -107,25 +133,8 @@
     </div>
   </section>
 
-  <section class="section" id="dates">
-    <div class="container narrow-section">
-      <div class="section-head">
-        <p class="section-kicker">Timeline</p>
-        <h2>Important Dates</h2>
-        <p class="section-intro">Submission and camera-ready deadlines are at 11:59 PM in the timezone indicated below. The dates follow the accepted WACV 2027 workshop proposal.</p>
-      </div>
-      <div class="dates">
-        <div class="date-row"><time datetime="2026-10-02">October 2, 2026</time><span>Paper submission deadline · AoE</span></div>
-        <div class="date-row"><time datetime="2026-10-30">October 30, 2026</time><span>Author notification</span></div>
-        <div class="date-row"><time datetime="2026-11-02">November 2, 2026</time><span>Accepted-paper metadata delivered to IEEE</span></div>
-        <div class="date-row"><time datetime="2026-11-20">November 20, 2026</time><span>Camera-ready deadline · Pacific Time</span></div>
-        <div class="date-row date-highlight"><time datetime="2027-01-04">January 4 or 5, 2027</time><span>EOF workshop · Orlando, Florida · exact day to be announced</span></div>
-      </div>
-    </div>
-  </section>
-
   <section class="section section-soft" id="program">
-    <div class="container">
+    <div class="container narrow-section">
       <div class="section-head">
         <p class="section-kicker">Half-day · single-track · in person</p>
         <h2>Tentative Program</h2>
@@ -138,17 +147,35 @@
 </div>
 <div class="schedule-row talk">
   <div class="schedule-time">08:40–09:05</div>
-  <div class="schedule-event">Yusuke Sugano · Gaze estimation and visual attention for smart eyewear</div>
+  <div class="schedule-event schedule-event-speaker">
+    <img class="schedule-photo" src="assets/images/people/yusuke-sugano.png" alt="Yusuke Sugano" width="112" height="112" loading="lazy">
+    <div>
+      <p class="schedule-speaker-name">Yusuke Sugano <span class="schedule-affiliation">· The University of Tokyo</span></p>
+      <p class="schedule-talk-title">Gaze estimation and visual attention for smart eyewear</p>
+    </div>
+  </div>
   <div class="schedule-type">Invited talk</div>
 </div>
 <div class="schedule-row talk">
   <div class="schedule-time">09:05–09:30</div>
-  <div class="schedule-event">Oleg Komogortsev · Eye movements, biometrics, and privacy in wearable devices</div>
+  <div class="schedule-event schedule-event-speaker">
+    <img class="schedule-photo" src="assets/images/people/oleg-komogortsev.png" alt="Oleg Komogortsev" width="112" height="112" loading="lazy">
+    <div>
+      <p class="schedule-speaker-name">Oleg Komogortsev <span class="schedule-affiliation">· Texas State University</span></p>
+      <p class="schedule-talk-title">Eye movements, biometrics, and privacy in wearable devices</p>
+    </div>
+  </div>
   <div class="schedule-type">Invited talk</div>
 </div>
 <div class="schedule-row talk">
   <div class="schedule-time">09:30–09:55</div>
-  <div class="schedule-event">Elisabetta Farella · Energy-efficient embedded AI for always-on wearable perception</div>
+  <div class="schedule-event schedule-event-speaker">
+    <img class="schedule-photo" src="assets/images/people/elisabetta-farella.png" alt="Elisabetta Farella" width="112" height="112" loading="lazy">
+    <div>
+      <p class="schedule-speaker-name">Elisabetta Farella <span class="schedule-affiliation">· Fondazione Bruno Kessler</span></p>
+      <p class="schedule-talk-title">Energy-efficient embedded AI for always-on wearable perception</p>
+    </div>
+  </div>
   <div class="schedule-type">Invited talk</div>
 </div>
 <div class="schedule-row">
@@ -163,87 +190,31 @@
 </div>
 <div class="schedule-row talk">
   <div class="schedule-time">11:25–11:50</div>
-  <div class="schedule-event">Michael Goesele · Egocentric sensing and perception for smart eyewear</div>
+  <div class="schedule-event schedule-event-speaker">
+    <img class="schedule-photo" src="assets/images/people/michael-goesele.png" alt="Michael Goesele" width="112" height="112" loading="lazy">
+    <div>
+      <p class="schedule-speaker-name">Michael Goesele <span class="schedule-affiliation">· Meta Reality Labs Research</span></p>
+      <p class="schedule-talk-title">Egocentric sensing and perception for smart eyewear</p>
+    </div>
+  </div>
   <div class="schedule-type">Invited talk</div>
 </div>
 <div class="schedule-row talk">
   <div class="schedule-time">11:50–12:15</div>
-  <div class="schedule-event">Giovanni Maria Farinella · Egocentric vision for context-aware smart eyewear</div>
+  <div class="schedule-event schedule-event-speaker">
+    <img class="schedule-photo" src="assets/images/people/giovanni-maria-farinella.png" alt="Giovanni Maria Farinella" width="112" height="112" loading="lazy">
+    <div>
+      <p class="schedule-speaker-name">Giovanni Maria Farinella <span class="schedule-affiliation">· University of Catania</span></p>
+      <p class="schedule-talk-title">Egocentric vision for context-aware smart eyewear</p>
+    </div>
+  </div>
   <div class="schedule-type">Invited talk</div>
 </div>
-<div class="schedule-row">
+<div class="schedule-row" id="awards">
   <div class="schedule-time">12:15–12:30</div>
-  <div class="schedule-event">Best Paper Award, closing remarks, and next steps</div>
+  <div class="schedule-event">Best Paper Award, closing remarks, and next steps<p class="schedule-note">A smart eyewear device provided by EssilorLuxottica will be awarded to the best paper.</p></div>
   <div class="schedule-type">Closing</div>
 </div></div>
-    </div>
-  </section>
-
-  <section class="section" id="speakers">
-    <div class="container">
-      <div class="section-head">
-        <p class="section-kicker">Invited talks</p>
-        <h2>Invited Speakers</h2>
-        <p class="section-intro">Five invited speakers provide complementary perspectives across gaze, eye movements, embedded AI, egocentric sensing and context-aware vision.</p>
-      </div>
-      <div class="people-grid"><article class="person-card">
-  <img class="person-photo" src="assets/images/people/yusuke-sugano.png" alt="Yusuke Sugano" width="420" height="420" loading="lazy">
-  <div class="person-content">
-    
-    <h3>Yusuke Sugano</h3>
-    <p class="person-affiliation">The University of Tokyo</p>
-    <p class="person-description"><span class="person-talk-label">Talk</span>Gaze estimation and visual attention for smart eyewear</p>
-  </div>
-</article>
-<article class="person-card">
-  <img class="person-photo" src="assets/images/people/oleg-komogortsev.png" alt="Oleg Komogortsev" width="420" height="420" loading="lazy">
-  <div class="person-content">
-    
-    <h3>Oleg Komogortsev</h3>
-    <p class="person-affiliation">Texas State University</p>
-    <p class="person-description"><span class="person-talk-label">Talk</span>Eye movements, biometrics, and privacy in wearable devices</p>
-  </div>
-</article>
-<article class="person-card">
-  <img class="person-photo" src="assets/images/people/elisabetta-farella.png" alt="Elisabetta Farella" width="420" height="420" loading="lazy">
-  <div class="person-content">
-    
-    <h3>Elisabetta Farella</h3>
-    <p class="person-affiliation">Fondazione Bruno Kessler</p>
-    <p class="person-description"><span class="person-talk-label">Talk</span>Energy-efficient embedded AI for always-on wearable perception</p>
-  </div>
-</article>
-<article class="person-card">
-  <img class="person-photo" src="assets/images/people/michael-goesele.png" alt="" width="420" height="420" loading="lazy">
-  <div class="person-content">
-
-    <h3>Michael Goesele</h3>
-    <p class="person-affiliation">Meta Reality Labs Research</p>
-    <p class="person-description"><span class="person-talk-label">Talk</span>Egocentric sensing and perception for smart eyewear</p>
-  </div>
-</article>
-<article class="person-card">
-  <img class="person-photo" src="assets/images/people/giovanni-maria-farinella.png" alt="Giovanni Maria Farinella" width="420" height="420" loading="lazy">
-  <div class="person-content">
-    
-    <h3>Giovanni Maria Farinella</h3>
-    <p class="person-affiliation">University of Catania</p>
-    <p class="person-description"><span class="person-talk-label">Talk</span>Egocentric vision for context-aware smart eyewear</p>
-  </div>
-</article></div>
-    </div>
-  </section>
-
-  <section class="section section-soft" id="awards">
-    <div class="container">
-      <div class="section-head">
-        <p class="section-kicker">Recognition</p>
-        <h2>Awards</h2>
-      </div>
-      <article class="award-card">
-        <div class="award-symbol"><svg role="img" viewBox="0 0 64 64" aria-hidden="true"><path d="M21 8h22v9c0 8-4.9 15-12 17.9V43h10v7H23v-7h10v-8.1C25.9 32 21 25 21 17V8Z"></path><path d="M21 13H11v4c0 8 5.4 14.6 12.8 16.5M43 13h10v4c0 8-5.4 14.6-12.8 16.5"></path></svg></div>
-        <div class="award-copy"><span class="award-label">Best Paper Award</span><h3>Outstanding workshop contribution</h3><p>A smart eyewear device provided by EssilorLuxottica will be awarded during the workshop closing session.</p></div>
-      </article>
     </div>
   </section>
 
@@ -342,7 +313,7 @@
 <footer>
   <div class="container footer-main">
     <div class="footer-brand">
-      <span class="brand-mark footer-mark">EOF</span>
+      <span class="brand-mark footer-mark"><img src="assets/icons/sel-logo.svg" alt="Smart Eyewear Lab"></span>
       <div><strong>Eyes of the Future</strong><span>Smart Eyewear Lab (SEL)</span></div>
     </div>
     <nav class="footer-links" aria-label="Edition navigation">
