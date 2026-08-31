@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Eyes of the Future symbol">
+  <title>EOF symbol — accent tile</title>
+  <rect width="400" height="400" rx="88" fill="#DBFF3C"></rect>
+  <g transform="translate(200 200) scale(0.72) translate(-400 -150)">
+    <path id="eye-contour" d="M280 150C346 54 454 54 520 150C454 246 346 246 280 150Z" fill="none" stroke="#000000" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path id="iris" d="M400 114A36 36 0 1 0 400 186A36 36 0 1 0 400 114ZM415 125A10 10 0 1 0 415 145A10 10 0 1 0 415 125Z" fill="#000000" fill-rule="evenodd"></path>
+  </g>
+</svg>

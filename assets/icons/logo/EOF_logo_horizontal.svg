@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="40 30 2040 240" width="2040" height="240" role="img" aria-label="EOF — Eyes of the Future">
+  <title>EOF — Eyes of the Future — horizontal lockup</title>
+  <g fill="none" stroke="#000000" stroke-width="40" stroke-linecap="round" stroke-linejoin="round">
+    <g id="letter-E">
+      <path d="M250 50H130A70 70 0 0 0 60 120V180A70 70 0 0 0 130 250H250"></path>
+      <path d="M60 150H280"></path>
+    </g>
+    <g id="eye-contour">
+      <path d="M280 150C346 54 454 54 520 150"></path>
+      <path d="M280 150C346 246 454 246 520 150"></path>
+    </g>
+    <g id="letter-F">
+      <path d="M520 150H740"></path>
+      <path d="M790 50H640A60 60 0 0 0 580 110V250"></path>
+    </g>
+  </g>
+  <path id="iris" d="M400 114A36 36 0 1 0 400 186A36 36 0 1 0 400 114ZM415 125A10 10 0 1 0 415 145A10 10 0 1 0 415 125Z" fill="#DBFF3C" fill-rule="evenodd"></path>
+  <rect x="866" y="60" width="6" height="180" rx="3" fill="#000000"></rect>
+  <text id="subtitle" x="938" y="178" fill="#000000" font-family="Inter, 'Inter Tight', 'Helvetica Neue', Arial, sans-serif" font-size="82" font-weight="700" textLength="1060" lengthAdjust="spacing">EYES OF THE FUTURE</text>
+</svg>

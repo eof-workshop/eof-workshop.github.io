@@ -72,6 +72,7 @@ main { min-height: 70vh; }
   justify-content: space-between;
   gap: 28px;
 }
+.nav-left { display: flex; align-items: center; gap: 28px; min-width: 0; }
 .brand {
   display: inline-flex;
   align-items: center;
@@ -79,6 +80,7 @@ main { min-height: 70vh; }
   min-width: max-content;
   color: var(--ink);
   text-decoration: none;
+  cursor: default;
 }
 .brand-mark {
   width: auto;
@@ -88,6 +90,11 @@ main { min-height: 70vh; }
   place-items: center;
 }
 .brand-mark img { height: 100%; width: auto; display: block; background: #ffffff; }
+.header-sel-mark { height: 48px; }
+.brand-mark-eof { height: 26px; }
+.brand-mark-eof svg { height: 100%; width: auto; display: block; }
+.brand-mark-eof svg #iris { fill: var(--accent); }
+.brand-divider { width: 1px; height: 20px; background: var(--line-strong); flex: 0 0 auto; }
 .brand-copy { display: grid; gap: 4px; line-height: 1.05; }
 .brand-copy strong { font-size: .94rem; letter-spacing: -.01em; color: var(--ink); }
 .brand-copy small { color: var(--muted); font-size: .69rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; }
@@ -210,7 +217,7 @@ h1 { margin: 0 0 14px; max-width: 900px; font-size: clamp(3rem, 6vw, 5.25rem); }
 .edition-hero-current .edition-summary { max-width: 650px; }
 .edition-hero-side { display: flex; flex-direction: column; gap: 18px; }
 .hero-organized {
-  padding: 14px 18px;
+  padding: 18px;
   border: 1px solid rgba(219, 255, 60, .25);
   border-radius: 14px;
   background: linear-gradient(135deg, rgba(219, 255, 60, .1), rgba(219, 255, 60, .02)), rgba(0, 0, 0, .55);
@@ -844,11 +851,9 @@ footer {
 .footer-brand > div { display: grid; gap: 2px; line-height: 1.2; }
 .footer-brand strong { font-size: .91rem; }
 .footer-brand span:not(.brand-mark) { color: var(--muted); font-size: .76rem; }
-.footer-mark { width: auto; height: 26px; }
-.footer-links { display: flex; flex-wrap: wrap; gap: 5px; }
-.footer-links a { padding: 6px 8px; border-radius: 7px; color: #b0b0b0; text-decoration: none; }
-.footer-links a:hover { background: var(--surface); color: var(--accent); }
-.footer-bottom { margin-top: 24px; padding-top: 18px; border-top: 1px solid var(--line); font-size: .77rem; line-height: 1.5; }
+.footer-mark { width: auto; height: 52px; }
+.footer-bottom { display: flex; align-items: flex-start; gap: 8px; margin-top: 24px; padding-top: 18px; border-top: 1px solid var(--line); font-size: .77rem; line-height: 1.5; }
+.footer-eof-mark { height: 14px; width: auto; margin-top: 2px; flex: 0 0 auto; color: var(--muted); }
 
 .back-to-top {
   position: fixed;
@@ -902,6 +907,8 @@ footer {
   .hero-organized { padding: 12px 14px; font-size: .86rem; }
   .nav-toggle { display: inline-flex; }
   .brand-copy small { display: none; }
+  .nav-wrap .brand-divider,
+  .nav-wrap .brand-mark:not(.brand-mark-eof) { display: none; }
   .nav-links {
     position: absolute;
     top: var(--header-height);
