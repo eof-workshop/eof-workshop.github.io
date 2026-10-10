@@ -200,14 +200,16 @@ main { min-height: 70vh; }
 }
 h1, h2, h3 { line-height: 1.12; letter-spacing: -.035em; }
 h1 { margin: 0 0 14px; max-width: 900px; font-size: clamp(3rem, 6vw, 5.25rem); }
+.title-end { white-space: nowrap; }
 .eof-tag {
   display: inline-block;
-  margin-left: .18em;
-  color: var(--muted);
-  font-size: .55em;
-  font-weight: 700;
-  letter-spacing: 0;
-  vertical-align: middle;
+  margin-left: .16em;
+  color: var(--ink-soft);
+  font-size: .46em;
+  font-weight: 650;
+  letter-spacing: .01em;
+  vertical-align: baseline;
+  white-space: nowrap;
 }
 .edition-subtitle {
   max-width: 800px;
@@ -601,7 +603,7 @@ h1 { margin: 0 0 14px; max-width: 900px; font-size: clamp(3rem, 6vw, 5.25rem); }
   align-items: center;
   gap: 6px;
 }
-.timeline-body span { color: var(--muted); font-size: .88rem; line-height: 1.4; }
+.timeline-body > span { color: var(--muted); font-size: .88rem; line-height: 1.4; }
 .tbd-badge {
   display: inline-block;
   padding: 2px 9px;
@@ -617,12 +619,25 @@ h1 { margin: 0 0 14px; max-width: 900px; font-size: clamp(3rem, 6vw, 5.25rem); }
 }
 .tbd-badge-inline { padding: 1px 7px; margin-left: 2px; }
 .date-old {
-  text-decoration: line-through;
-  text-decoration-color: var(--muted);
+  position: relative;
+  display: inline-block;
   color: var(--muted);
   font-weight: 600;
   font-size: .76em;
-  margin-right: 2px;
+  line-height: 1;
+  text-decoration: none;
+}
+.date-old::after {
+  content: "";
+  position: absolute;
+  left: -3px;
+  right: -3px;
+  top: 46%;
+  height: 2.5px;
+  border-radius: 999px;
+  background: #ff3b3b;
+  box-shadow: 0 0 8px rgba(255, 59, 59, .55);
+  transform: translateY(-50%);
 }
 .extended-badge {
   display: inline-block;
