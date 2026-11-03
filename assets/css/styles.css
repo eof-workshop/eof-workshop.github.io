@@ -566,6 +566,41 @@ h1 { margin: 0 0 14px; max-width: 900px; font-size: clamp(3rem, 6vw, 5.25rem); }
   white-space: nowrap;
 }
 .tbd-badge-inline { padding: 1px 7px; margin-left: 2px; }
+.date-old {
+  position: relative;
+  display: inline-block;
+  color: var(--muted);
+  font-weight: 600;
+  font-size: .76em;
+  line-height: 1;
+  text-decoration: none;
+}
+.date-old::after {
+  content: "";
+  position: absolute;
+  left: -3px;
+  right: -3px;
+  top: 46%;
+  height: 2.5px;
+  border-radius: 999px;
+  background: #ff3b3b;
+  box-shadow: 0 0 8px rgba(255, 59, 59, .55);
+  transform: translateY(-50%);
+}
+.extended-badge {
+  display: inline-block;
+  padding: 2px 9px;
+  margin-left: 2px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  border: 1px solid rgba(219, 255, 60, .35);
+  color: var(--accent);
+  font-size: .64rem;
+  font-weight: 780;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
 
 .schedule {
   overflow: hidden;
