@@ -688,6 +688,11 @@ h1 { margin: 0 0 14px; max-width: 900px; font-size: clamp(3rem, 6vw, 5.25rem); }
   background: var(--surface-soft);
   object-fit: cover;
 }
+.schedule-mark {
+  object-fit: contain;
+  padding: 0;
+  background: #000;
+}
 .schedule-speaker-name { margin: 0; font-weight: 680; }
 .schedule-affiliation { color: var(--muted); font-weight: 500; }
 .schedule-talk-title { margin: 2px 0 0; color: var(--muted); font-weight: 500; font-size: .89rem; line-height: 1.4; }
